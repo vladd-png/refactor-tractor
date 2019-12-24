@@ -1,0 +1,15 @@
+@use "variables" as var;
+
+body {
+  font-family: var.$primary-font;
+  margin: 0;
+  background-color: var.$primary-background;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  height: 80px;
+  padding-top: 10px;
+}
