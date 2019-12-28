@@ -1,9 +1,12 @@
-@use "variables" as var;
+// @import "variables" var;
+$primary-background: #4d4e4f;
+$primary-font: 'Open Sans';
+
 
 body {
-  font-family: var.$primary-font;
+  font-family: $primary-font;
   margin: 0;
-  background-color: var.$primary-background;
+  background-color: $primary-background;
   height: auto;
 }
 
