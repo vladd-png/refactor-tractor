@@ -92,6 +92,7 @@ function addInfoToSidebar(user, userStorage) {
   $('#userAddress').text(user.address);
   $('#userEmail').text(user.email);
   $('#userStridelength').text(`Your stridelength is ${user.strideLength} meters.`);
+  $('#friendList').before(makeFriendHTML(user, userStorage));
   // sidebarName.innerText = user.name;
   // headerText.innerText = `${user.getFirstName()}'s Activity Tracker`;
   // stepGoalCard.innerText = `Your daily step goal is ${user.dailyStepGoal}.`
@@ -99,7 +100,7 @@ function addInfoToSidebar(user, userStorage) {
   // userAddress.innerText = user.address;
   // userEmail.innerText = user.email;
   // userStridelength.innerText = `Your stridelength is ${user.strideLength} meters.`;
-  friendList.insertAdjacentHTML('afterBegin', makeFriendHTML(user, userStorage))
+  // friendList.insertAdjacentHTML('afterBegin', makeFriendHTML(user, userStorage))
 };
 
 function makeFriendHTML(user, userStorage) {
