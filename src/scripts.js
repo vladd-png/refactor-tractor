@@ -16,7 +16,7 @@ import Hydration from './Hydration';
 import Sleep from './Sleep';
 import UserRepo from './User-repo';
 
-var sidebarName = document.getElementById('sidebarName');
+// var sidebarName = document.getElementById('sidebarName');
 var stepGoalCard = document.getElementById('stepGoalCard');
 var headerText = document.getElementById('headerText');
 var userAddress = document.getElementById('userAddress');
@@ -93,14 +93,6 @@ function addInfoToSidebar(user, userStorage) {
   $('#userEmail').text(user.email);
   $('#userStridelength').text(`Your stridelength is ${user.strideLength} meters.`);
   $('#friendList').before(makeFriendHTML(user, userStorage));
-  // sidebarName.innerText = user.name;
-  // headerText.innerText = `${user.getFirstName()}'s Activity Tracker`;
-  // stepGoalCard.innerText = `Your daily step goal is ${user.dailyStepGoal}.`
-  // avStepGoalCard.innerText = `The average daily step goal is ${userStorage.calculateAverageStepGoal()}`;
-  // userAddress.innerText = user.address;
-  // userEmail.innerText = user.email;
-  // userStridelength.innerText = `Your stridelength is ${user.strideLength} meters.`;
-  // friendList.insertAdjacentHTML('afterBegin', makeFriendHTML(user, userStorage))
 };
 
 function makeFriendHTML(user, userStorage) {
